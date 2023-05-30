@@ -37,5 +37,10 @@ function obtenerTurno() {
     }
 }
 
+// Función para buscar un turno por fecha
+function buscarTurnoPorFecha(fecha) {
+    return turnos.find((t) => t.fecha === fecha);
+}
+
 // Llamada a la función principal
 obtenerTurno();
